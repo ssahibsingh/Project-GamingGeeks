@@ -1,0 +1,120 @@
+/* you can import CSS from other pens - we'll import color and typography styles from this pen */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+body {
+  background: #010e1f;
+  color: #00e0e0;
+  font-family: "Oswald", Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 2em 0;
+  font-size: 2.5em;
+  font-family:initial;
+}
+header{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.footer{
+  color: #00e0e0;
+  font-size: xx-small;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.link {
+  display: inline-table;
+  
+  vertical-align: middle;
+  width: 125px;
+  height: 37px;
+  line-height: 36px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  color: #00e0e0;
+  letter-spacing: 0.11em;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 40px;
+  position: relative;
+}
+.link span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.wipe, .slide, .opacity {
+  border: 1px solid #00e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.opacity {
+  transition: background-color 0.1s linear, color 0.1s linear;
+  background: #010e1f;
+}
+.opacity:hover {
+  color: #010e1f;
+  background: #010e1f;
+  background-color: #00e0e0;
+}
+
+/* .wipe {
+  transition: color 0.3s ease-out;
+}
+.wipe::after {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  content: " ";
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(34px);
+  z-index: -1;
+}
+.wipe:hover {
+  color: #124a58;
+}
+.wipe:hover::after {
+  transform: translateY(0px);
+} */
+ .underline {
+  border: 2px solid transparent;
+}
+.underline::after {
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  content: " ";
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.underline:hover::after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  content: " ";
+  position: absolute;
+  top: 34px;
+  left: 0;
+}
